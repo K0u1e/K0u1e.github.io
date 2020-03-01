@@ -18,7 +18,7 @@ sidebar-avatar: /img/avatar-m      # 你的个人头像 这里你可以改成我
 
 # SNS settings
 RSS: false
-weibo_username:     K0u1e
+weibo_username:     5744188695
 zhihu_username:     wang-da-yang-43-61
 github_username:    K0u1e
 #facebook_username:  username
@@ -100,7 +100,7 @@ service-worker: true
 friends: [
     {
         title: "K0u1e",
-        href: "https://k0u1e.github.io/"
+        href: "haaachi.top"
     },{
         title: "Apple",
         href: "https://apple.com"
