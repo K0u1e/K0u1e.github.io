@@ -1,7 +1,6 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
-title:      Longest-Shortest-Path   # 标题 
-subtitle:   AOJ2736                 #副标题
+title:      AOJ2736-Longest-Shortest-Path   # 标题 
 date:       2020-03-01 				# 时间
 author:    K0u1e					# 作者
 header-img: img/post-bg-desk.jpg 	#这篇文章标题背景图片
