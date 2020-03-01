@@ -1,3 +1,21 @@
+---
+layout:     post   				    # 使用的布局（不需要改）
+title:      My First Post 				# 标题 
+subtitle:   Hello World, Hello Blog #副标题
+date:       2017-02-06 				# 时间
+author:     BY 						# 作者
+header-img: img/post-bg-2015.jpg 	#这篇文章标题背景图片
+catalog: true 						# 是否归档
+tags:								#标签
+    - 费用流
+    - 线性规划
+---
+
+## Hey
+>这是我的第一篇博客。
+
+进入你的博客主页，新的文章将会出现在你的主页上.
+
 ## 题意
 给定一张$n$个点$m$条边的带权有向，你可以以$c_ix$的代价使边$i$的权值增加$x$，但是所有边的权值的增加量不得超过$P$，问增加边权后从点$s$到点$t$的最短路的最大值为多少。
 ## 分析
