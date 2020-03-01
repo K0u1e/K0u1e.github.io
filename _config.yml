@@ -100,7 +100,7 @@ service-worker: true
 friends: [
     {
         title: "FrogG_YLH",
-        href: "http://haaachi.top"
+        href: "https://haaachi.top"
     },{
         title: "Apple",
         href: "https://apple.com"
