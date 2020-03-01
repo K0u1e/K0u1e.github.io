@@ -5,20 +5,20 @@ header-img: img/post-bg-desk.jpg          #显示在首页的背景图片
 email: 464787445@qq.com
 description: "Phew~"                      #网站介绍
 keyword: "ACM,ICPC,CCPC,XCPC,算法,算法竞赛"        #关键词
-url: "http://qiubaiying.github.io"          #这个就是填写你的博客地址
+url: "http://K0u1e.github.io"          #这个就是填写你的博客地址
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
+github_repo: "https://github.com/K0u1e/K0u1e.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                                # 是否开启侧边栏.
 sidebar-about-description: "Goals determine what you going to be!"     # 瞎比比
-sidebar-avatar: /img/avatar-m.jpg      # 你的个人头像 这里你可以改成我在img文件夹中的两张备用照片 img/avatar-m 或 avatar-g
+sidebar-avatar: /img/avatar-m      # 你的个人头像 这里你可以改成我在img文件夹中的两张备用照片 img/avatar-m 或 avatar-g
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     K0u1e
+weibo_username:     wang-da-yang-43-61
 zhihu_username:     K0u1e
 github_username:    K0u1e
 #facebook_username:  username
