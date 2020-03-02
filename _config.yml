@@ -11,7 +11,7 @@ github_repo: "https://github.com/K0u1e/K0u1e.github.io.git" # you code repositor
 
 # Sidebar settings
 sidebar: true                                # 是否开启侧边栏.
-sidebar-about-description: "Goals determine what you going to be!"     # 瞎比比
+sidebar-about-description: "Phew~"     # 瞎比比
 sidebar-avatar: /img/567.jpg      # 你的个人头像 这里你可以改成我在img文件夹中的两张备用照片 img/avatar-m 或 avatar-g
 
 
