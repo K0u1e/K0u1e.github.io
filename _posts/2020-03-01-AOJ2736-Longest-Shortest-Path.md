@@ -39,18 +39,18 @@ s.t. \quad \sum_{(v,s)\in G}f_e-\sum_{(s,v)\in G} f_e \ge -1\\
 \quad f_e\ge 0
 $$
 
-可以发现是一个类似费用流的形式，前三个限制的左边相加等于$0$，所以都只能取等号，即流量为$1$。
-
-所以可以写成：
+可以发现是一个类似费用流的形式。令$y=\frac{1}{m}，f_e=\frac{f_e}{m}$：
 
 $$
-\min \quad \sum d_ef_e+Py\\
-s.t. \quad 从s到t的流量为1\\
-\quad c_ey-f_e\ge0\\
-\quad f_e\ge 0, y\ge0
+\min \quad (\sum d_ef_e+P)/m\\
+s.t. \quad \sum_{(v,s)\in G}f_e-\sum_{(s,v)\in G} f_e \ge -m\\
+\quad \sum_{(v,t)\in G}f_e-\sum_{(t,v)\in G} f_e \ge m\\
+\quad \sum_{(v,u)\in G}f_e-\sum_{(u,v)\in G} f_e \ge 0\\
+\quad 0 \le f_e \le c_e\\
+\quad m>0
 $$
 
-令$y=\frac{1}{m}，f_e=\frac{f_e}{m}$：
+前三个限制的左边相加等于$0$，所以都只能取等号，即流量为$m$。
 
 $$
 \min \quad (\sum d_ef_e+P)/m\\
