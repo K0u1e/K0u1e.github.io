@@ -1,6 +1,6 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
-title:      Codeforces Round #625   # 标题 
+title:      Codeforces Round 625   # 标题 
 subtitle: Div. 1, based on Technocup 2020 Final Round
 date:       2020-03-02 				# 时间
 author:    K0u1e					# 作者
