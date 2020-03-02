@@ -12,7 +12,7 @@ github_repo: "https://github.com/K0u1e/K0u1e.github.io.git" # you code repositor
 # Sidebar settings
 sidebar: true                                # 是否开启侧边栏.
 sidebar-about-description: "Goals determine what you going to be!"     # 瞎比比
-sidebar-avatar: /img/avatar-m      # 你的个人头像 这里你可以改成我在img文件夹中的两张备用照片 img/avatar-m 或 avatar-g
+sidebar-avatar: /img/567.jpg      # 你的个人头像 这里你可以改成我在img文件夹中的两张备用照片 img/avatar-m 或 avatar-g
 
 
 
@@ -104,5 +104,8 @@ friends: [
     },{
         title: "Wenzhuan",
         href: "https://wzyxv1n.top"
+    },{
+        title: "willingox",
+        href: "https://willingox555.cn"
     }
 ]
