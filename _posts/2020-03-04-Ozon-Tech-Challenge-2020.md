@@ -22,7 +22,7 @@ tags:								#标签
 
 ### C - Kuroni and Impossible Calculation
 
-当$n>m$时必有一对$|a[i]-a[j]| \mod m=0$，此时答案为0，否则$n^2$暴力做就好了。
+当$n>m$时必有一对$a[i]-a[j] \mod m = 0$，此时答案为0，否则$n^2$暴力做就好了。
 
 ### D - Kuroni and the Celebration 
 
