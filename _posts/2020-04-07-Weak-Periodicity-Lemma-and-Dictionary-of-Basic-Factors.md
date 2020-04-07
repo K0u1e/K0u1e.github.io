@@ -16,7 +16,7 @@ tags:								#标签
 
 **定义 1：**若串 $S$ 和整数 $x$ 满足 $1\le x \le \vert S \vert $，且对于所有的 $1 \le i \le \vert S \vert - x$，都有 $S[i]=S[i+x]$，则称 $x$ 为串 $S$ 的周期或周期长度。特别地，若 $x$ 还是 $\vert S \vert$ 的因数，则称 $x$ 是 $S$ 的整周期，$S$ 是整周期串。
 
-**定义 2：**$per(S)$ 表示 $S$ 所有周期组成的集合，$minper(S)$ 表示 $per(S)$ 中的最小值。显然对于非空串有 $|S| \in per(S)$，$\vert per(S) \vert >0$。
+**定义 2：**$per(S)$ 表示 $S$ 所有周期组成的集合，$minper(S)$ 表示 $per(S)$ 中的最小值。显然对于非空串有 $\vert S\vert \in per(S)$，$\vert per(S) \vert >0$。
 
 **定义 3：**若串 $S$ 和整数 $x$ 满足 $0 \le x < \vert S\vert$，且满足 $pref(S,x)=suf(S,x)$，则称 $pref(S,x)$ 是 $S$ 的 border​。
 
@@ -48,17 +48,17 @@ tags:								#标签
 
 ### 基本算法
 
-**定义 5：**对于两个串 $S,T$ 满足 $\vert S \vert=\vert T \vert$，定义 $PS(S,T)=\{k | pref(S,k)=suf(T,k)\}$，$LargePS(S,T)=\{k|k\in PS(S,T) , k\ge\frac{\vert S \vert}{2} \}$。
+**定义 5：**对于两个串 $S,T$ 满足 $\vert S \vert=\vert T \vert$，定义 $PS(S,T)=\{k \mid pref(S,k)=suf(T,k)\}$，$LargePS(S,T)=\{k \mid k\in PS(S,T) , k\ge\frac{\vert S \vert}{2} \}$。
 
 **推论 4：**$LargePS(S,T)$ 的元素构成一个等差数列。
 
 **推论 5：**对于一个串 $S$ 和整数 $k\le\frac{\vert S \vert}{2}$，所有满足 $k\le x < 2k$ 的 $S$ 的 border 长度 $x$ 构成等差数列。
 
-有了这个结论我们可以 $S$ 的 border 分成 $\log |S|$ 类，第 $i$ 类为长度在 $[2^{i-1},2^i)$ 中的所有 border，可以用一个等差数列表示。于是我们有了一个用 $O(\log \vert S \vert)$ 空间表示 $per(S)$ 的方案。
+有了这个结论我们可以 $S$ 的 border 分成 $\log \vert S\vert$ 类，第 $i$ 类为长度在 $[2^{i-1},2^i)$ 中的所有 border，可以用一个等差数列表示。于是我们有了一个用 $O(\log \vert S \vert)$ 空间表示 $per(S)$ 的方案。
 
 而对于 $[2^{i-1},2^i)$ 这一类的 $border$，我们要求的其实就是 $Large(pref(S,2^i),suf(S,2^i))$。
 
-**引理 4：**对于 $2^{k-1}\le x < |S|=|T|=2^k$，$x\in LargePS(S,T)$ 当且仅当 $suf(pref(S,x),2^{k-1})=suf(T,2^{k-1})$，且对应地 $pref(suf(T,x),2^{k-1})=pref(S,2^{k-1})$。
+**引理 4：**对于 $2^{k-1}\le x < \vert S\vert=\vert T\vert=2^k$，$x\in LargePS(S,T)$ 当且仅当 $suf(pref(S,x),2^{k-1})=suf(T,2^{k-1})$，且对应地 $pref(suf(T,x),2^{k-1})=pref(S,2^{k-1})$。
 
 有了这个引理，我们可以先求出 $pref(S,2^{i-1})$ 在 $suf(S,2^i)$ 的所有出现位置，以及 $suf(S,2^{i-1})$ 在 $pref(S,2^i)$的所有出现位置，均用等差数列表示。为了得到 $LargePS(pref(S,2^i),suf(S,2^i))$，把这两个等差数列移位后求交即可。
 
