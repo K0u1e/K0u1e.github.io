@@ -18,7 +18,7 @@ tags:								#标签
 
 **定义 2：**$per(S)$ 表示 $S$ 所有周期组成的集合，$minper(S)$ 表示 $per(S)$ 中的最小值。显然对于非空串有 $|S| \in per(S)$，$\vert per(S) \vert >0$。
 
-**定义 3：**若串 $S$ 和整数 $x$ 满足 $0 \le x < |S|$，且满足 $pref(S,x)=suf(S,x)$，则称 $pref(S,x)$ 是 $S$ 的 border​。
+**定义 3：**若串 $S$ 和整数 $x$ 满足 $0 \le x < \vert S\vert$，且满足 $pref(S,x)=suf(S,x)$，则称 $pref(S,x)$ 是 $S$ 的 border​。
 
 **推论 1：**$\vert S \vert-x$ 是 $S$ 的周期当且仅当 $pref(S,x)$ 是 $S$ 的 border。
 
